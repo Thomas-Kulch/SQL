@@ -1,0 +1,26 @@
+CREATE TABLE store (id INTEGER,item TEXT,type TEXT,price INTEGER,color TEXT);
+
+INSERT INTO store VALUES(1,"Short Sleeve","Top",25,"Red");
+INSERT INTO store VALUES(2,"Short Sleeve","Top",25,"Blue");
+INSERT INTO store VALUES(3,"Short Sleeve","Top",25,"Green");
+INSERT INTO store VALUES(4,"Short Sleeve","Top",25,"Black");
+INSERT INTO store VALUES(5,"Short Sleeve","Top",25,"White");
+INSERT INTO store VALUES(6,"Long Sleeve","Top",35,"Red");
+INSERT INTO store VALUES(7,"Long Sleeve","Top",35,"Blue");
+INSERT INTO store VALUES(8,"Long Sleeve","Top",35,"Green");
+INSERT INTO store VALUES(9,"Long Sleeve","Top",27,"Black");
+INSERT INTO store VALUES(10,"Long Sleeve","Top",27,"Wnite");
+INSERT INTO store VALUES(11,"Pants","Bottom",50,"Red");
+INSERT INTO store VALUES(12,"Pants","Bottom",50,"Blue");
+INSERT INTO store VALUES(13,"Pants","Bottom",50,"Green");
+INSERT INTO store VALUES(14,"Pants","Bottom",50,"Black");
+INSERT INTO store VALUES(15,"Pants","Bottom",50,"White");
+
+SELECT *
+from store
+where color = "Black"
+order by price desc;
+
+SELECT AVG(price) 
+from store;
+
